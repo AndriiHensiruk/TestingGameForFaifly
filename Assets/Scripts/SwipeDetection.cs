@@ -49,6 +49,7 @@ public class SwipeDetection : MonoBehaviour
         if (fingerDown && Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Ended)
         {
             fingerDown = false;
+             player.DropBomb();
         }
     }
         
